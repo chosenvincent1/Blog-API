@@ -1,12 +1,14 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const dotenv = require('dotenv')
+const dotenv = require('dotenv');
+
+const blogRouter = require('./Routers/Blog.Router');
 
 const app = express();
 dotenv.config();
 
 app.use(express.json());
-// app.use('/', Router)
+app.use('/blog', blogRouter)
 
 const PORT = process.env.PORT || 7000;
 const MongoDB_String = process.env.MongoDB_String;
