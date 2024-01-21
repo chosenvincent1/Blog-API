@@ -1,6 +1,6 @@
 const express = require('express');
 
-const { getAllBlogs, addBlog, getSingleBlog, updateBlog, deleteBlog } = require('../Controllers/Blog.Controller');
+const { getAllBlogs, addBlog, getSingleBlog, updateBlog, deleteBlog } = require('../Controllers/Blog_Controller');
 
 const blogRouter = express.Router()
 
